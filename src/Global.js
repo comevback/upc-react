@@ -21,7 +21,6 @@ export const ParaProvider = ({ children }) => {
     const [apiUrl, setAPI_URL] = useState(INITIAL_API_URL);
     const [apiName, setAPI_NAME] = useState(INITIAL_API_NAME);
     const [centralServerUrl, setCENTRAL_SERVER_URL] = useState(INITIAL_CENTRAL_SERVER_URL);
-    const [chatGPTAPI, setCHATGPT_API] = useState(chatGPT_API);
 
     return (
         <ParaContext.Provider value={{
@@ -31,8 +30,6 @@ export const ParaProvider = ({ children }) => {
             setAPI_NAME,
             CENTRAL_SERVER_URL: centralServerUrl, 
             setCENTRAL_SERVER_URL, 
-            CHATGPT_API: chatGPTAPI,
-            setCHATGPT_API
         }}>
             {children}
         </ParaContext.Provider>
