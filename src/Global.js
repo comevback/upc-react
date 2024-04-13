@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react';
 
 // Get data
-const INITIAL_API_URL = process.env.REACT_APP_INITIAL_API_URL || 'https://xuxiang.art/app'; // replace with your backend URL
+const INITIAL_API_URL = process.env.REACT_APP_INITIAL_API_URL || 'http://18.179.12.207:4000'; // replace with your backend URL
 const INITIAL_API_NAME = process.env.REACT_APP_INITIAL_API_NAME || 'API Service'; // replace with your backend name
 const INITIAL_CENTRAL_SERVER_URL = process.env.REACT_APP_INITIAL_CENTRAL_SERVER_URL || 'https://xuxiang.art/regi'; // replace with your central register server URL
 

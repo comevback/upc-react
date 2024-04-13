@@ -25,7 +25,9 @@ const Term = () => {
     useEffect(() => {
         requestAnimationFrame(() => {
             console.log(`Terminal is being rendered`)
-            socket.current = io(API_URL);
+            socket.current = io(API_URL, {
+                path: '/app', // the path of the WebSocket endpoint
+            });
             terminal.current = new Terminal({
                 cursorBlink: true,     // cursor blinking
                 cursorStyle: 'block',    // style（'block', 'underline', 'bar'）
