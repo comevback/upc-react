@@ -5,7 +5,7 @@ const response = await axios.get('https://api.ipify.org?format=json');
 const publicFrontUrl = `http://${response.data.ip}:3000`;
 console.log('Frontend IP:', publicFrontUrl);
 // generate a unique name for the service
-const frontName = 'Frontend-' + response.data.ip + Date.now();
+const frontName = 'Frontend-' + response.data.ip;
 
 // With Central Server ----------------------------------------------------------------------------------------
 
