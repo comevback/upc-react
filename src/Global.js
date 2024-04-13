@@ -12,8 +12,6 @@ const defaultValue = {
     setAPI_NAME: () => {},
     CENTRAL_SERVER_URL: INITIAL_CENTRAL_SERVER_URL,
     setCENTRAL_SERVER_URL: () => {},
-    CHATGPT_API: chatGPT_API,
-    setCHATGPT_API: () => {},
 };
 
 // Create a context
