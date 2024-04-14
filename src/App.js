@@ -4,6 +4,7 @@ import Application from './Components/Application';
 import { registerService, unregisterService, sendHeartbeat } from './Tools/api.js';
 import { ParaProvider } from './Global.js';
 import { ParaContext } from './Global.js';
+import { SpeedInsights } from "@vercel/speed-insights/react" // Import the SpeedInsights component
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <div className="App">
       <ParaProvider>
         <Application />
+        <SpeedInsights />
       </ParaProvider>
     </div>
   );
